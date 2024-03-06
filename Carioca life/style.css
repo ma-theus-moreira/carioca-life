@@ -1,0 +1,127 @@
+@keyframes movimento {
+    0%{
+        background-position-x: 0px;
+    }
+    
+    100%{
+        background-position-x: -400px;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+.tela {
+    position: relative;
+    width: 992.656px;
+    height: 400px;
+    border: 2px solid blue;
+    margin: 0 auto;
+    
+    background-image: url(imagens/backgroundrj.png);
+    background-size: 400px;
+    background-position-x: right;
+    background-repeat: repeat-x;
+    overflow: hidden; 
+    background-color: rgb(253, 253, 77);
+}
+.telaanimation{
+    animation: movimento 1.7s infinite linear ;
+}
+.painel{
+    position: absolute;
+    background-image:linear-gradient(45deg,rgb(255, 0, 0),rgb(121, 121, 219));
+    width: 200px;
+    height: 100px;
+    top: 40%;
+    transform: translatey(-50%);
+    left: 50%;
+    transform: translatex(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    width: 100px;
+    height: 45px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.btn_play{
+    background-image: url(imagens/btnplay.png);
+}
+.btn_reset{
+    background-image:url(imagens/btnreset.png);
+    display: none;
+    height: 40px;
+
+}
+.briel{
+    width: 70px;
+    position: absolute;
+    right: 50%;
+    bottom: 63px;
+}
+.firealert{
+    position: absolute;
+    width: 30px;
+    bottom: -100px;
+}
+.f1{
+    bottom: 85px;
+}
+.f2{
+    
+    bottom: 126px;
+}
+.f3{
+    
+    bottom:170px;
+}
+
+.bullet{
+    left: -6%;
+    width: 20px;
+    position: absolute;
+    
+    
+ }   
+.b1{
+    
+    bottom: 90px;
+}
+
+.b2{
+    bottom: 130px;
+}
+.b3{
+    bottom: 175px;
+}
+.fires{
+    animation: fire 0.95s linear infinite;
+}
+@keyframes fire {
+    0%{
+    left: -6%;
+    }100%{
+        left: 100%;
+    }
+}
+@keyframes brielcorrendo {
+    0%{
+
+    }50%{
+
+    }100%{
+
+    }
+}
+.brielinvert{
+    transform: scaleX(-1);
+  }
+.brielaltura{
+    width: 120px;
+}
